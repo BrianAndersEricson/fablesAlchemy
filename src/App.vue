@@ -1,18 +1,18 @@
 <template>
-  <img alt="Fables Logo" src="./assets/fables.png">
-  <FablesAlchemy msg="Potion Generator"/>
+  <img alt="Fables Logo" src="./assets/fables.png" />
+  <FablesAlchemy msg="Potion Generator" />
 </template>
 
 <script>
-import FablesAlchemy from './components/FablesAlchemy.vue'
-import "./stars.js"
+import FablesAlchemy from "./components/FablesAlchemy.vue";
+import "./stars.js";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    FablesAlchemy
-  }
-}
+    FablesAlchemy,
+  },
+};
 </script>
 
 <style>
@@ -23,6 +23,6 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #ADB0D8FF;
+  color: #adb0d8ff;
 }
 </style>

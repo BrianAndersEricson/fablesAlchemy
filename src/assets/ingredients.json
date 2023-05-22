@@ -210,11 +210,7 @@
     },
     {
       "name": "Pig Tallow",
-      "effects": [
-        "No added effect",
-        "No added effect",
-        "Great for cooking"
-      ]
+      "effects": ["No added effect", "No added effect", "Great for cooking"]
     },
     {
       "name": "Pine Sap",
@@ -234,11 +230,7 @@
     },
     {
       "name": "Powdered Leech",
-      "effects": [
-        "2 Unholy Damage",
-        "1d4 Bleed",
-        "2d4 Bleed"
-      ]
+      "effects": ["2 Unholy Damage", "1d4 Bleed", "2d4 Bleed"]
     },
     {
       "name": "Quicksilver",
