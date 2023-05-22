@@ -1,0 +1,292 @@
+{
+  "ingredients": [
+    {
+      "name": "Adder Venom",
+      "effects": [
+        "Cannot benefit from potions for 1d4 hours",
+        "Target loses use of arms for 1d4 hours",
+        "Necrosis of limb struck if not treated in 2 hours"
+      ]
+    },
+    {
+      "name": "Aloe",
+      "effects": [
+        "Adds a pleasant verdant taste and a slimy texture",
+        "Resilient to solar for 1d4 rounds",
+        "Resilient to fire for 1d6 rounds"
+      ]
+    },
+    {
+      "name": "Apple Vinegar",
+      "effects": [
+        "No added effect",
+        "Test Fate/Bane Reduce disease duration 1 day",
+        "Useful for cooking, cleaning, or baking"
+      ]
+    },
+    {
+      "name": "Basilisk Eye Jelly",
+      "effects": [
+        "Test Fate on failure gain encumbered for 1d4 hrs",
+        "Stun for 1d4 Actions",
+        "If attack would KO, target Tests Fate, on failure they are turned to stone"
+      ]
+    },
+    {
+      "name": "Bat Wool",
+      "effects": [
+        "Boon on checks involving hearing for 1d4 hours",
+        "Resilient to lunar for 1d4 rounds",
+        "A pile of bat wool"
+      ]
+    },
+    {
+      "name": "Black Cat Hair",
+      "effects": [
+        "Boon on next Test of Fate",
+        "Boon on next 1d4 Tests of Fate",
+        "Pile of cat hair"
+      ]
+    },
+    {
+      "name": "Black Pearl",
+      "effects": [
+        "Deal 1d6 Fire Damage to a target sharing your zone",
+        "Deal 1d8 Fire Damage to a target sharing your zone",
+        "You and all individuals sharing your zone take 1d10 fire damage"
+      ]
+    },
+    {
+      "name": "Bogle Tail",
+      "effects": [
+        "Regain 1 Spirit",
+        "Automatically succeed on next 1d4 tests of fate",
+        "Regain all spirit"
+      ]
+    },
+    {
+      "name": "Cockatrice Fang",
+      "effects": [
+        "Attack ignores armor",
+        "2d6 Unholy Damage",
+        "Test Fate w/ Boon on failure death"
+      ]
+    },
+    {
+      "name": "Deadly Nightshade",
+      "effects": [
+        "1d4 Rounds dazed",
+        "Stun for 1d4-2 Actions (min 1)",
+        "1d6 Verdant dmg"
+      ]
+    },
+    {
+      "name": "Dræm Droppings",
+      "effects": [
+        "Regain 1 ability use, lips turn blue for 1 day",
+        "Regain 1d4 ability uses tongue and lips turn blue for 1 day",
+        "Skin turns pale blue for 1 week"
+      ]
+    },
+    {
+      "name": "Elayne's Tears",
+      "effects": [
+        "Restore 1d4 Fatigue if imbibed more than once per day take 1d4 Verdant Damage instead",
+        "Restore 1d6 Fatigue if imbibed more than once per day take 1d6 Verdant Damage instead",
+        "1d10 Damage"
+      ]
+    },
+    {
+      "name": "Eye of Newt",
+      "effects": [
+        "Masks scent/taste of 1 ingredient as bitter instead",
+        "Tests of Fate to resist disease are done with boon for the next 1d4 hrs",
+        "Excellent topping on bread or meats"
+      ]
+    },
+    {
+      "name": "Florejin Saffron",
+      "effects": [
+        "Spellcraft +1 for 1d4 Hours",
+        "Restore 2d4 Fatigue",
+        "Restore 2d6 Fatigue and cannot eat for the remainder of the day (stomach cramps)"
+      ]
+    },
+    {
+      "name": "Foxglove",
+      "effects": [
+        "1d4 Verdant Damage",
+        "2d4 Verdant Damage",
+        "Test Fate every hour, if 3 failures are reached before 2 successes, death"
+      ]
+    },
+    {
+      "name": "Ghost Sweat",
+      "effects": [
+        "Boon on checks involving stealth for 1d4 hours",
+        "You can talk to ethereal individuals for 1 day",
+        "Physical form becomes ethereal for 1d4 hours."
+      ]
+    },
+    {
+      "name": "Ginseng",
+      "effects": [
+        "Remove inaccurate for the remainder of the round",
+        "Test Fate to avoid dazed for the next 1d6 Hours",
+        "Cannot sleep for 1 rest"
+      ]
+    },
+    {
+      "name": "Green Pearl",
+      "effects": [
+        "1d4 Lightning damage",
+        "Resilient to lightning for 1d4 rounds",
+        "1d10 Lightning Damage"
+      ]
+    },
+    {
+      "name": "Hemlock",
+      "effects": [
+        "Silence for 1d4 Hours",
+        "Unable to move for 1d4 rounds",
+        "Target rendered prone for 1d4 rounds"
+      ]
+    },
+    {
+      "name": "Honey",
+      "effects": [
+        "Masks scent/taste of 1 ingredient as sweet",
+        "One additional dose supplied",
+        "Tastes good"
+      ]
+    },
+    {
+      "name": "Honeysuckle",
+      "effects": [
+        "Reduce dazed duration by 1 round",
+        "Reduce dazed by 1d4 rounds",
+        "Remove all dazed"
+      ]
+    },
+    {
+      "name": "Infernal Moss",
+      "effects": [
+        "Deal 1d4 fire dmg, ends bleeding",
+        "Restore 1d4 Fatigue on following round",
+        "Restore 1d6 Fatigue on following round"
+      ]
+    },
+    {
+      "name": "Mandrake",
+      "effects": [
+        "Test Fate, on success remove silence",
+        "Counteract effects preventing sleep",
+        "Cause vomiting canceling any consumed poison from the last hour"
+      ]
+    },
+    {
+      "name": "Maple Syrup",
+      "effects": [
+        "Test Fate/Bane on success no longer exhausted for 1d4 hrs",
+        "Test Fate on success no longer exhausted for 1d4 hrs",
+        "Remove exhaustion for 1d4 hrs"
+      ]
+    },
+    {
+      "name": "Marshmallow",
+      "effects": [
+        "Counteract effects preventing eating",
+        "Turn concoction into a gelled solid",
+        "Test fate or fall unconscious for 1d4 hours"
+      ]
+    },
+    {
+      "name": "Moonflower",
+      "effects": [
+        "1d4 Lunar Damage (affects ethereal targets)",
+        "2d4 Lunar Damage (affects ethereal targets)",
+        "Always hits vs Ethereal Targets"
+      ]
+    },
+    {
+      "name": "Pig Tallow",
+      "effects": [
+        "No added effect",
+        "No added effect",
+        "Great for cooking"
+      ]
+    },
+    {
+      "name": "Pine Sap",
+      "effects": [
+        "Double effective applications",
+        "One additional dose supplied",
+        "Items this is applied to become sticky"
+      ]
+    },
+    {
+      "name": "Poison Ivy",
+      "effects": [
+        "1 Verdant dmg",
+        "Double received fire/frost dmg for 1d4 rounds",
+        "Cannot sleep for 1 rest"
+      ]
+    },
+    {
+      "name": "Powdered Leech",
+      "effects": [
+        "2 Unholy Damage",
+        "1d4 Bleed",
+        "2d4 Bleed"
+      ]
+    },
+    {
+      "name": "Quicksilver",
+      "effects": [
+        "Bane on all checks for the next 1d4 Rests",
+        "2d4 Rounds Dazed",
+        "1d12 Mind damage"
+      ]
+    },
+    {
+      "name": "Roc Feather",
+      "effects": [
+        "Test Fate/Bane cure condition",
+        "Test Fate on success cure condition",
+        "Cure condition"
+      ]
+    },
+    {
+      "name": "Salt",
+      "effects": [
+        "Potion has only negative effects for infernal/undead",
+        "Resilient to verdant for 1d4 rounds",
+        "Season or preserve food"
+      ]
+    },
+    {
+      "name": "Water",
+      "effects": [
+        "Remove 1 other effect",
+        "Halve effectiveness of potion",
+        "Cleans things nicely, good to drink."
+      ]
+    },
+    {
+      "name": "Willow Bark",
+      "effects": [
+        "Reduce next attack by 1d4",
+        "Resilient to mind for 1d4 rounds",
+        "Double all bleed received for next 1d4 hours"
+      ]
+    },
+    {
+      "name": "Yarrow",
+      "effects": [
+        "Reduce the effect of an ingredient by 1 concentration",
+        "Resilient to frost for 1d4 rounds",
+        "Cannot eat for 1 day (stomach cramps)"
+      ]
+    }
+  ]
+}

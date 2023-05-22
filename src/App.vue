@@ -1,26 +1,28 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <img alt="Fables Logo" src="./assets/fables.png">
+  <FablesAlchemy msg="Potion Generator"/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import FablesAlchemy from './components/FablesAlchemy.vue'
+import "./stars.js"
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    FablesAlchemy
   }
 }
 </script>
 
 <style>
+@import "./style.css";
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Recoleta";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: #ADB0D8FF;
 }
 </style>
