@@ -1,7 +1,11 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-
+<br><br>
+    <button @click="randomizeIngredients">I'm Feeling Lucky</button>
+    <br><br>
+    <h2>Select your potion ingredients!</h2>
+    <br>
     <select v-if="ingredientsData" v-model="selectedIngredient1">
       <option v-for="ingredient in ingredientsData.ingredients" :key="ingredient.name" :value="ingredient.name">
         {{ ingredient.name }}
@@ -21,22 +25,17 @@
     </select>
     <br>
     <br>
-    <button @click="randomizeIngredients">Randomize Ingredients</button>
-    <br>
-    <br>
     <button @click="generatePotion">Generate Potion</button>
+    <br>
 
     <!-- Output the potion if it has been generated -->
     <div v-if="potion.length">
-      <h2>Potion Ingredients:</h2>
-      <ul>
-        <li v-for="(ingredient, index) in potion" :key="index">{{ ingredient }}</li>
-      </ul>
+      <br>
+      <h2>Potion Ingredients</h2>
+        <p v-for="(ingredient, index) in potion" :key="index">{{ ingredient }}</p>
 
-      <h2>Potion Effects:</h2>
-      <ul>
-        <li v-for="(effect, index) in potionEffects" :key="index">{{ effect }}</li>
-      </ul>
+      <h2>Potion Effects</h2>
+        <p v-for="(effect, index) in potionEffects" :key="index">{{ effect }}</p>
     </div>
 
   </div>
@@ -97,23 +96,37 @@ export default {
     },
 
     generatePotion() {
-      // Clear the current potion and effects
+      // Reset potion and potionEffects before generating a new one
       this.potion = [];
       this.potionEffects = [];
 
-      // Add each selected ingredient to the potion
-      if (this.selectedIngredient1) this.addIngredient(this.selectedIngredient1);
-      if (this.selectedIngredient2) this.addIngredient(this.selectedIngredient2);
-      if (this.selectedIngredient3) this.addIngredient(this.selectedIngredient3);
+      // Check that all three ingredients are selected
+      if (!this.selectedIngredient1 || !this.selectedIngredient2 || !this.selectedIngredient3) {
+        alert('Please select all three ingredients before generating a potion');
+        return;
+      }
+
+      this.addIngredient(this.selectedIngredient1);
+      this.addIngredient(this.selectedIngredient2);
+      this.addIngredient(this.selectedIngredient3);
     },
+
     randomizeIngredients() {
       let ingredientNames = this.ingredientsData.ingredients.map(ingredient => ingredient.name);
-      let shuffledNames = this.shuffleArray(ingredientNames);
 
-      // Select the first three ingredients
-      this.selectedIngredient1 = shuffledNames[0];
-      this.selectedIngredient2 = shuffledNames[1];
-      this.selectedIngredient3 = shuffledNames[2];
+      // Select three ingredients independently
+      this.selectedIngredient1 = this.getRandomIngredient(ingredientNames);
+      this.selectedIngredient2 = this.getRandomIngredient(ingredientNames);
+      this.selectedIngredient3 = this.getRandomIngredient(ingredientNames);
+
+      // Generate a potion with the randomized ingredients
+      this.generatePotion();
+    },
+
+    // Function to randomly select an ingredient
+    getRandomIngredient(ingredients) {
+      let randomIndex = Math.floor(Math.random() * ingredients.length);
+      return ingredients[randomIndex];
     },
 
     // Function to shuffle an array (Fisher-Yates algorithm)
