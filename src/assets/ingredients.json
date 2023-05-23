@@ -2,283 +2,534 @@
   "ingredients": [
     {
       "name": "Adder Venom",
+      "texture": ["Liquid"],
+      "taste": ["Sweet", "Tangy"],
+      "color": ["Yellow", "Green"],
+      "smell": ["Null"],
       "effects": [
         "Cannot benefit from potions for 1d4 hours",
         "Target loses use of arms for 1d4 hours",
         "Necrosis of limb struck if not treated in 2 hours"
-      ]
+      ],
+      "consumed": false,
+      "venom": true,
+      "applied": false
     },
     {
       "name": "Aloe",
+      "texture": ["Herbal", "Slimy"],
+      "taste": ["Earthy", "Bitter"],
+      "color": ["Green", "Yellow"],
+      "smell": ["Alium"],
       "effects": [
         "Adds a pleasant verdant taste and a slimy texture",
         "Resilient to solar for 1d4 rounds",
         "Resilient to fire for 1d6 rounds"
-      ]
+      ],
+      "consumed": true,
+      "venom": false,
+      "applied": true
     },
     {
       "name": "Apple Vinegar",
+      "texture": ["Liquid"],
+      "taste": ["Acidic", "Sour"],
+      "color": ["Orange"],
+      "smell": ["Sour", "Fruity"],
       "effects": [
-        "No added effect",
-        "Test Fate/Bane Reduce disease duration 1 day",
+        "Null",
+        "Test Fate/Bane, on success Reduce disease duration 1 day",
         "Useful for cooking, cleaning, or baking"
-      ]
+      ],
+      "consumed": true,
+      "venom": false,
+      "applied": true
     },
     {
       "name": "Basilisk Eye Jelly",
+      "texture": ["Gel, Slippery"],
+      "taste": ["Rancid", "Bitter"],
+      "color": ["Gray"],
+      "smell": ["Rancid"],
       "effects": [
         "Test Fate on failure gain encumbered for 1d4 hrs",
         "Stun for 1d4 Actions",
         "If attack would KO, target Tests Fate, on failure they are turned to stone"
-      ]
+      ],
+      "consumed": false,
+      "venom": true,
+      "applied": false
     },
     {
       "name": "Bat Wool",
+      "texture": ["Furry"],
+      "taste": ["Musky"],
+      "color": ["Black"],
+      "smell": ["Musty"],
       "effects": [
         "Boon on checks involving hearing for 1d4 hours",
         "Resilient to lunar for 1d4 rounds",
         "A pile of bat wool"
-      ]
+      ],
+      "consumed": true,
+      "venom": false,
+      "applied": false
     },
     {
       "name": "Black Cat Hair",
+      "texture": ["Furry"],
+      "taste": ["Musky"],
+      "color": ["Black"],
+      "smell": ["Musty"],
       "effects": [
         "Boon on next Test of Fate",
         "Boon on next 1d4 Tests of Fate",
         "Pile of cat hair"
-      ]
+      ],
+      "consumed": true,
+      "venom": false,
+      "applied": false
     },
     {
       "name": "Black Pearl",
+      "texture": ["Smooth"],
+      "taste": ["Spicy"],
+      "color": ["Purple"],
+      "smell": ["Null"],
       "effects": [
-        "Deal 1d6 Fire Damage to a target sharing your zone",
-        "Deal 1d8 Fire Damage to a target sharing your zone",
+        "Make a fire attack for 1d6 damage",
+        "Make a fire attack for 1d8 damage",
         "You and all individuals sharing your zone take 1d10 fire damage"
-      ]
+      ],
+      "consumed": true,
+      "venom": false,
+      "applied": false
     },
     {
       "name": "Bogle Tail",
+      "texture": ["Slippery"],
+      "taste": ["Savory", "Woody"],
+      "color": ["Green"],
+      "smell": ["Gamey"],
       "effects": [
         "Regain 1 Spirit",
         "Automatically succeed on next 1d4 tests of fate",
         "Regain all spirit"
-      ]
+      ],
+      "consumed": true,
+      "venom": false,
+      "applied": false
     },
     {
       "name": "Cockatrice Fang",
+      "texture": ["Powdery"],
+      "taste": ["Savory"],
+      "color": ["White"],
+      "smell": ["Null"],
       "effects": [
         "Attack ignores armor",
         "2d6 Unholy Damage",
-        "Test Fate w/ Boon on failure death"
-      ]
+        "Test Fate/Boon on failure death"
+      ],
+      "consumed": true,
+      "venom": true,
+      "applied": true
     },
     {
       "name": "Deadly Nightshade",
+      "texture": ["Herbal", "Floral"],
+      "taste": ["Sweet", "Savory", "Musky"],
+      "color": ["Green", "Purple"],
+      "smell": ["Sweet", "Floral"],
       "effects": [
         "1d4 Rounds dazed",
         "Stun for 1d4-2 Actions (min 1)",
         "1d6 Verdant dmg"
-      ]
+      ],
+      "consumed": true,
+      "venom": true,
+      "applied": false
     },
     {
       "name": "Dræm Droppings",
+      "texture": ["Gel, Slippery"],
+      "taste": ["Rancid", "Musky"],
+      "color": ["Brown", "Blue"],
+      "smell": ["Fruity", "Musty"],
       "effects": [
         "Regain 1 ability use, lips turn blue for 1 day",
-        "Regain 1d4 ability uses tongue and lips turn blue for 1 day",
+        "Regain 1d4 ability uses, tongue and lips turn blue for 1 day",
         "Skin turns pale blue for 1 week"
-      ]
+      ],
+      "consumed": true,
+      "venom": false,
+      "applied": false
     },
     {
       "name": "Elayne's Tears",
+      "texture": ["Floral"],
+      "taste": ["Floral", "Sweet"],
+      "color": ["Blue", "White"],
+      "smell": ["Wet", "Metallic"],
       "effects": [
-        "Restore 1d4 Fatigue if imbibed more than once per day take 1d4 Verdant Damage instead",
-        "Restore 1d6 Fatigue if imbibed more than once per day take 1d6 Verdant Damage instead",
+        "Heal 1d4. If imbibed more than once per day take 1d4 instead",
+        "Heal 1d6. If imbibed more than once per day take 1d6 instead",
         "1d10 Damage"
-      ]
+      ],
+      "consumed": true,
+      "venom": false,
+      "applied": false
     },
     {
       "name": "Eye of Newt",
+      "texture": ["Vegetable"],
+      "taste": ["Spicy", "Bitter"],
+      "color": ["Black"],
+      "smell": ["Bitter", "Spicy"],
       "effects": [
-        "Masks scent/taste of 1 ingredient as bitter instead",
+        "Masks scent/taste of 1 name as bitter instead",
         "Tests of Fate to resist disease are done with boon for the next 1d4 hrs",
         "Excellent topping on bread or meats"
-      ]
+      ],
+      "consumed": true,
+      "venom": false,
+      "applied": true
     },
     {
       "name": "Florejin Saffron",
+      "texture": ["Floral"],
+      "taste": ["Floral"],
+      "color": ["Orange"],
+      "smell": ["Sweet", "Floral"],
       "effects": [
         "Spellcraft +1 for 1d4 Hours",
-        "Restore 2d4 Fatigue",
-        "Restore 2d6 Fatigue and cannot eat for the remainder of the day (stomach cramps)"
-      ]
+        "Heal 2d4",
+        "Heal 2d6 and cannot eat for the remainder of the day (stomach cramps)"
+      ],
+      "consumed": true,
+      "venom": false,
+      "applied": false
     },
     {
       "name": "Foxglove",
+      "texture": ["Floral"],
+      "taste": ["Floral", "Sweet"],
+      "color": ["Green", "Pink", "Red", "White"],
+      "smell": ["Floral", "Musty"],
       "effects": [
         "1d4 Verdant Damage",
         "2d4 Verdant Damage",
         "Test Fate every hour, if 3 failures are reached before 2 successes, death"
-      ]
+      ],
+      "consumed": true,
+      "venom": false,
+      "applied": false
     },
     {
       "name": "Ghost Sweat",
+      "texture": ["Liquid"],
+      "taste": ["No taste"],
+      "color": ["Clear"],
+      "smell": ["Null"],
       "effects": [
         "Boon on checks involving stealth for 1d4 hours",
         "You can talk to ethereal individuals for 1 day",
         "Physical form becomes ethereal for 1d4 hours."
-      ]
+      ],
+      "consumed": true,
+      "venom": false,
+      "applied": true
     },
     {
       "name": "Ginseng",
+      "texture": ["Herbal"],
+      "taste": ["Earthy", "Bitter", "Sweet"],
+      "color": ["Brown"],
+      "smell": ["Earthy", "Spicy"],
       "effects": [
         "Remove inaccurate for the remainder of the round",
         "Test Fate to avoid dazed for the next 1d6 Hours",
         "Cannot sleep for 1 rest"
-      ]
+      ],
+      "consumed": false,
+      "venom": false,
+      "applied": false
     },
     {
       "name": "Green Pearl",
+      "texture": ["Herbal", "Floral"],
+      "taste": ["Spicy", "Sweet"],
+      "color": ["Green"],
+      "smell": ["Verdant", "Spicy"],
       "effects": [
         "1d4 Lightning damage",
         "Resilient to lightning for 1d4 rounds",
         "1d10 Lightning Damage"
-      ]
+      ],
+      "consumed": true,
+      "venom": true,
+      "applied": false
     },
     {
       "name": "Hemlock",
+      "texture": ["Herbal", "Floral"],
+      "taste": ["Sweet", "Woody"],
+      "color": ["Green", "White"],
+      "smell": ["Earthy", "Minty"],
       "effects": [
         "Silence for 1d4 Hours",
         "Unable to move for 1d4 rounds",
         "Target rendered prone for 1d4 rounds"
-      ]
+      ],
+      "consumed": true,
+      "venom": true,
+      "applied": false
     },
     {
       "name": "Honey",
+      "texture": ["Viscous"],
+      "taste": ["Sweet"],
+      "color": ["Orange"],
+      "smell": ["Sweet", "Floral"],
       "effects": [
-        "Masks scent/taste of 1 ingredient as sweet",
+        "Masks scent/taste of 1 name as sweet",
         "One additional dose supplied",
-        "Tastes good"
-      ]
+        "tastes good"
+      ],
+      "consumed": true,
+      "venom": false,
+      "applied": false
     },
     {
       "name": "Honeysuckle",
+      "texture": ["Floral"],
+      "taste": ["Floral", "Sweet"],
+      "color": ["White", "Yellow"],
+      "smell": ["Sweet", "Floral"],
       "effects": [
         "Reduce dazed duration by 1 round",
         "Reduce dazed by 1d4 rounds",
         "Remove all dazed"
-      ]
+      ],
+      "consumed": true,
+      "venom": false,
+      "applied": false
     },
     {
       "name": "Infernal Moss",
+      "texture": ["Vegetable"],
+      "taste": ["Bitter", "Woody", "Rancid"],
+      "color": ["Red", "Orange", "Brown"],
+      "smell": ["Sulfurous"],
       "effects": [
         "Deal 1d4 fire dmg, ends bleeding",
-        "Restore 1d4 Fatigue on following round",
-        "Restore 1d6 Fatigue on following round"
-      ]
+        "Heal 1d4 on following round",
+        "Heal 1d6 on following round"
+      ],
+      "consumed": false,
+      "venom": false,
+      "applied": true
     },
     {
       "name": "Mandrake",
+      "texture": ["Vegetable"],
+      "taste": ["Woody", "Bitter"],
+      "color": ["Brown"],
+      "smell": ["Earthy", "Citrusy"],
       "effects": [
         "Test Fate, on success remove silence",
         "Counteract effects preventing sleep",
         "Cause vomiting canceling any consumed poison from the last hour"
-      ]
+      ],
+      "consumed": true,
+      "venom": false,
+      "applied": false
     },
     {
       "name": "Maple Syrup",
+      "texture": ["Viscous"],
+      "taste": ["Sweet"],
+      "color": ["Brown", "Orange"],
+      "smell": ["Sweet", "Earthy"],
       "effects": [
         "Test Fate/Bane on success no longer exhausted for 1d4 hrs",
         "Test Fate on success no longer exhausted for 1d4 hrs",
         "Remove exhaustion for 1d4 hrs"
-      ]
+      ],
+      "consumed": true,
+      "venom": false,
+      "applied": false
     },
     {
       "name": "Marshmallow",
+      "texture": ["Floral"],
+      "taste": ["Sweet", "Woody"],
+      "color": ["Green"],
+      "smell": ["Sweet", "Salty"],
       "effects": [
         "Counteract effects preventing eating",
         "Turn concoction into a gelled solid",
         "Test fate or fall unconscious for 1d4 hours"
-      ]
+      ],
+      "consumed": true,
+      "venom": false,
+      "applied": false
     },
     {
       "name": "Moonflower",
+      "texture": ["Floral"],
+      "taste": ["Floral", "Spicy"],
+      "color": ["Red", "Purple", "Green", "White"],
+      "smell": ["Floral", "Sweet"],
       "effects": [
         "1d4 Lunar Damage (affects ethereal targets)",
         "2d4 Lunar Damage (affects ethereal targets)",
-        "Always hits vs Ethereal Targets"
-      ]
+        "Effected Weapon always hits vs Ethereal Targets"
+      ],
+      "consumed": false,
+      "venom": true,
+      "applied": false
     },
     {
       "name": "Pig Tallow",
-      "effects": ["No added effect", "No added effect", "Great for cooking"]
+      "texture": ["Slimy"],
+      "taste": ["Bland", "Savory"],
+      "color": ["White"],
+      "smell": ["Null"],
+      "effects": ["Null", "Null", "Great for cooking"],
+      "consumed": true,
+      "applied": true
     },
     {
       "name": "Pine Sap",
+      "texture": ["Viscous"],
+      "taste": ["Sweet", "Acidic"],
+      "color": ["Brown"],
+      "smell": ["Sweet", "Minty"],
       "effects": [
         "Double effective applications",
         "One additional dose supplied",
         "Items this is applied to become sticky"
-      ]
+      ],
+      "consumed": false,
+      "venom": true,
+      "applied": true
     },
     {
       "name": "Poison Ivy",
+      "texture": ["Vegetable"],
+      "taste": ["Earthy", "Spicy"],
+      "color": ["Green"],
+      "smell": ["Earthy", "Musty"],
       "effects": [
         "1 Verdant dmg",
         "Double received fire/frost dmg for 1d4 rounds",
         "Cannot sleep for 1 rest"
-      ]
+      ],
+      "consumed": true,
+      "venom": true,
+      "applied": true
     },
     {
       "name": "Powdered Leech",
-      "effects": ["2 Unholy Damage", "1d4 Bleed", "2d4 Bleed"]
+      "texture": ["Gritty"],
+      "taste": ["Metallic"],
+      "color": ["White"],
+      "smell": ["Metallic"],
+      "effects": ["2 Unholy Damage", "1d4 Bleed", "2d4 Bleed"],
+      "consumed": false,
+      "venom": true,
+      "applied": false
     },
     {
       "name": "Quicksilver",
+      "texture": ["Liquid"],
+      "taste": ["Metallic"],
+      "color": ["Silver"],
+      "smell": ["Metallic"],
       "effects": [
         "Bane on all checks for the next 1d4 Rests",
         "2d4 Rounds Dazed",
         "1d12 Mind damage"
-      ]
+      ],
+      "consumed": true,
+      "venom": true,
+      "applied": true
     },
     {
       "name": "Roc Feather",
+      "texture": ["Downy"],
+      "taste": ["Woody", "Musky"],
+      "color": ["Brown", "White", "Gray"],
+      "smell": ["Musty"],
       "effects": [
         "Test Fate/Bane cure condition",
         "Test Fate on success cure condition",
         "Cure condition"
-      ]
+      ],
+      "consumed": false,
+      "venom": false,
+      "applied": true
     },
     {
       "name": "Salt",
+      "texture": ["Gritty"],
+      "taste": ["Salty"],
+      "color": ["White"],
+      "smell": ["Null"],
       "effects": [
         "Potion has only negative effects for infernal/undead",
         "Resilient to verdant for 1d4 rounds",
         "Season or preserve food"
-      ]
+      ],
+      "consumed": true,
+      "venom": false,
+      "applied": true
     },
     {
       "name": "Water",
+      "texture": ["Liquid"],
+      "taste": ["No taste"],
+      "color": ["Clear"],
+      "smell": ["Null"],
       "effects": [
         "Remove 1 other effect",
         "Halve effectiveness of potion",
         "Cleans things nicely, good to drink."
-      ]
+      ],
+      "consumed": true,
+      "venom": false,
+      "applied": true
     },
     {
       "name": "Willow Bark",
+      "texture": ["Vegetable"],
+      "taste": ["Woody"],
+      "color": ["Brown"],
+      "smell": ["Earthy"],
       "effects": [
         "Reduce next attack by 1d4",
         "Resilient to mind for 1d4 rounds",
         "Double all bleed received for next 1d4 hours"
-      ]
+      ],
+      "consumed": true,
+      "venom": false,
+      "applied": false
     },
     {
       "name": "Yarrow",
+      "texture": ["Vegetable", "Floral", "Herbal"],
+      "taste": ["Sweet", "Bitter"],
+      "color": ["Pink", "Red", "Yellow", "White", "Green"],
+      "smell": ["Earthy", "Sweet"],
       "effects": [
-        "Reduce the effect of an ingredient by 1 concentration",
+        "Reduce the effect of an name by 1 concentration",
         "Resilient to frost for 1d4 rounds",
         "Cannot eat for 1 day (stomach cramps)"
-      ]
+      ],
+      "consumed": true,
+      "venom": false,
+      "applied": true
     }
   ]
 }

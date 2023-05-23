@@ -104,7 +104,9 @@ export default {
       );
 
       // Add the corresponding effect to the potion effects
-      this.potionEffects.push(ingredient.effects[count]);
+      if (ingredient.effects[count] !== "Null") {
+        this.potionEffects.push(ingredient.effects[count]);
+      }
 
       // Add the ingredient to the potion
       this.potion.push(ingredientName);
