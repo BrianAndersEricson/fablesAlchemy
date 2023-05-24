@@ -1,4 +1,4 @@
-# my-project
+# Fables Alchemy
 
 ## Project setup
 ```
