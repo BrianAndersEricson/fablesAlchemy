@@ -1,6 +1,10 @@
 <template>
-  <img alt="Fables Logo" src="./assets/fables.png" />
-  <FablesAlchemy msg="Potion Generator" />
+  <div id="app">
+    <div class="logo">
+      <img alt="Fables Logo" src="./assets/fables.png" />
+    </div>
+    <FablesAlchemy msg="Potion Generator" />
+  </div>
 </template>
 
 <script>

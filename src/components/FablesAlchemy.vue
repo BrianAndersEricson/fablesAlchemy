@@ -44,21 +44,37 @@
     <div v-if="potion.length">
       <br />
       <h2>Potion Ingredients</h2>
-      <p v-for="(ingredient, index) in potion" :key="index">{{ ingredient }}</p>
+      <p v-for="(ingredient, index) in potion" :key="index">
+        {{ ingredient }}
+      </p>
 
       <h2>Potion Effects</h2>
-      <p v-for="(effect, index) in potionEffects" :key="index">{{ effect }}</p>
+      <p v-for="(effect, index) in potionEffects" :key="index">
+        {{ effect }}
+      </p>
+      <br />
+      <h2>Potion Color</h2>
+      <PotionVisualization :potion="potion" />
+      <br />
+      <h2>Potion Taste</h2>
+      <PotionFlavorProfile :potion="potionarray" />
     </div>
   </div>
 </template>
 
 <script>
 import ingredients from "../assets/ingredients.json";
+import PotionVisualization from "./PotionVisualization.vue";
+import PotionFlavorProfile from "@/components/PotionFlavorProfile.vue";
 
 export default {
   name: "FablesAlchemy",
   props: {
     msg: String,
+  },
+  components: {
+    PotionFlavorProfile,
+    PotionVisualization,
   },
   data() {
     return {
@@ -71,15 +87,6 @@ export default {
     };
   },
   methods: {
-    async fetchData() {
-      try {
-        const response = await fetch("../assets/ingredients.json");
-        this.ingredientsData = await response.json();
-      } catch (error) {
-        console.error("Failed to fetch ingredient data:", error);
-      }
-    },
-
     addIngredient(ingredientName) {
       let ingredient = this.ingredientsData.ingredients.find(
         (ingredient) => ingredient.name === ingredientName
@@ -151,21 +158,6 @@ export default {
       let randomIndex = Math.floor(Math.random() * ingredients.length);
       return ingredients[randomIndex];
     },
-
-    // Function to shuffle an array (Fisher-Yates algorithm)
-    shuffleArray(array) {
-      for (let i = array.length - 1; i > 0; i--) {
-        let j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]]; // swap elements
-      }
-      return array;
-    },
-  },
-  async created() {
-    await this.fetchData();
   },
 };
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped></style>

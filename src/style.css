@@ -49,6 +49,7 @@ br {
 }
 
 select {
+  margin-top: 3px;
   padding: 3px;
   border-radius: 8px;
   font-family: "Recoleta";
@@ -58,8 +59,16 @@ select {
   width: 8em;
   font-size: 16px;
 }
+
 img {
-  width: 35em;
+  max-width: 50%;
+  height: auto;
+}
+
+.logo {
+  position: relative;
+  max-height: 30%;
+  max-width: 100%;
 }
 
 button {

@@ -2,9 +2,11 @@
   "ingredients": [
     {
       "name": "Adder Venom",
+      "category": "Animal",
       "texture": ["Liquid"],
-      "taste": ["Sweet", "Tangy"],
-      "color": ["Yellow", "Green"],
+      "taste": [1, 1, 1, 2, 3],
+      "color": [194, 145, 1, 0.65],
+      "density": 0.5,
       "smell": ["Null"],
       "effects": [
         "Cannot benefit from potions for 1d4 hours",
@@ -17,9 +19,11 @@
     },
     {
       "name": "Aloe",
+      "category": "Plant",
       "texture": ["Herbal", "Slimy"],
-      "taste": ["Earthy", "Bitter"],
-      "color": ["Green", "Yellow"],
+      "taste": [0, 1, 0, 0, 1],
+      "color": [107, 166, 51, 0.8],
+      "density": 0.7,
       "smell": ["Alium"],
       "effects": [
         "Adds a pleasant verdant taste and a slimy texture",
@@ -31,10 +35,12 @@
       "applied": true
     },
     {
-      "name": "Apple Vinegar",
+      "name": "Apple Cider Vinegar",
+      "category": "Plant",
       "texture": ["Liquid"],
-      "taste": ["Acidic", "Sour"],
-      "color": ["Orange"],
+      "taste": [0, 9, 0, 3, 7],
+      "color": [211, 99, 25, 0.6],
+      "density": 0.8,
       "smell": ["Sour", "Fruity"],
       "effects": [
         "Null",
@@ -47,9 +53,11 @@
     },
     {
       "name": "Basilisk Eye Jelly",
+      "category": "Animal",
       "texture": ["Gel, Slippery"],
-      "taste": ["Rancid", "Bitter"],
-      "color": ["Gray"],
+      "taste": [7, 4, 3, 0, 1],
+      "color": [151, 152, 117, 0.9],
+      "density": 0.9,
       "smell": ["Rancid"],
       "effects": [
         "Test Fate on failure gain encumbered for 1d4 hrs",
@@ -62,9 +70,11 @@
     },
     {
       "name": "Bat Wool",
+      "category": "Animal",
       "texture": ["Furry"],
-      "taste": ["Musky"],
-      "color": ["Black"],
+      "taste": [2, 0, 1, 0, 1],
+      "color": [60, 51, 50, 0.99],
+      "density": 1,
       "smell": ["Musty"],
       "effects": [
         "Boon on checks involving hearing for 1d4 hours",
@@ -77,9 +87,11 @@
     },
     {
       "name": "Black Cat Hair",
+      "category": "Animal",
       "texture": ["Furry"],
-      "taste": ["Musky"],
-      "color": ["Black"],
+      "taste": [3, 0, 0, 0, 0],
+      "color": [26, 11, 6, 0.98],
+      "density": 1,
       "smell": ["Musty"],
       "effects": [
         "Boon on next Test of Fate",
@@ -92,9 +104,11 @@
     },
     {
       "name": "Black Pearl",
+      "category": "Mineral",
       "texture": ["Smooth"],
-      "taste": ["Spicy"],
-      "color": ["Purple"],
+      "taste": [2, 0, 9, 0, 4],
+      "color": [20, 0, 62, 1],
+      "density": 0.8,
       "smell": ["Null"],
       "effects": [
         "Make a fire attack for 1d6 damage",
@@ -107,9 +121,11 @@
     },
     {
       "name": "Bogle Tail",
+      "category": "Animal",
       "texture": ["Slippery"],
-      "taste": ["Savory", "Woody"],
-      "color": ["Green"],
+      "taste": [4, 1, 5, 0, 7],
+      "color": [80, 110, 134, 1],
+      "density": 0.7,
       "smell": ["Gamey"],
       "effects": [
         "Regain 1 Spirit",
@@ -122,9 +138,11 @@
     },
     {
       "name": "Cockatrice Fang",
+      "category": "Animal",
       "texture": ["Powdery"],
-      "taste": ["Savory"],
-      "color": ["White"],
+      "taste": [6, 0, 4, 0, 3],
+      "color": [213, 191, 180, 1],
+      "density": 0.6,
       "smell": ["Null"],
       "effects": [
         "Attack ignores armor",
@@ -137,9 +155,11 @@
     },
     {
       "name": "Deadly Nightshade",
+      "category": "Plant",
       "texture": ["Herbal", "Floral"],
-      "taste": ["Sweet", "Savory", "Musky"],
-      "color": ["Green", "Purple"],
+      "taste": [2, 1, 0, 7, 4],
+      "color": [54, 3, 9, 1],
+      "density": 0.8,
       "smell": ["Sweet", "Floral"],
       "effects": [
         "1d4 Rounds dazed",
@@ -152,9 +172,11 @@
     },
     {
       "name": "Dræm Droppings",
+      "category": "Animal",
       "texture": ["Gel, Slippery"],
-      "taste": ["Rancid", "Musky"],
-      "color": ["Brown", "Blue"],
+      "taste": [2, 3, 0, 7, 6],
+      "color": [13, 25, 31, 1],
+      "density": 1,
       "smell": ["Fruity", "Musty"],
       "effects": [
         "Regain 1 ability use, lips turn blue for 1 day",
@@ -167,9 +189,11 @@
     },
     {
       "name": "Elayne's Tears",
+      "category": "Plant",
       "texture": ["Floral"],
-      "taste": ["Floral", "Sweet"],
-      "color": ["Blue", "White"],
+      "taste": [0, 6, 0, 5, 5],
+      "color": [90, 163, 216, 1],
+      "density": 0.6,
       "smell": ["Wet", "Metallic"],
       "effects": [
         "Heal 1d4. If imbibed more than once per day take 1d4 instead",
@@ -182,9 +206,11 @@
     },
     {
       "name": "Eye of Newt",
+      "category": "Plant",
       "texture": ["Vegetable"],
-      "taste": ["Spicy", "Bitter"],
-      "color": ["Black"],
+      "taste": [5, 2, 0, 0, 3],
+      "color": [53, 23, 28, 1],
+      "density": 0.7,
       "smell": ["Bitter", "Spicy"],
       "effects": [
         "Masks scent/taste of 1 name as bitter instead",
@@ -197,9 +223,11 @@
     },
     {
       "name": "Florejin Saffron",
+      "category": "Plant",
       "texture": ["Floral"],
-      "taste": ["Floral"],
-      "color": ["Orange"],
+      "taste": [2, 3, 0, 5, 7],
+      "color": [202, 79, 0, 1],
+      "density": 0.7,
       "smell": ["Sweet", "Floral"],
       "effects": [
         "Spellcraft +1 for 1d4 Hours",
@@ -212,9 +240,13 @@
     },
     {
       "name": "Foxglove",
+      "category": "Plant",
       "texture": ["Floral"],
-      "taste": ["Floral", "Sweet"],
-      "color": ["Green", "Pink", "Red", "White"],
+      "taste": [7, 1, 0, 2, 1],
+      "color": [201, 72, 76, 1],
+      "color1": [115, 20, 150, 1],
+      "color2": [241, 246, 240, 1],
+      "density": 0.6,
       "smell": ["Floral", "Musty"],
       "effects": [
         "1d4 Verdant Damage",
@@ -227,9 +259,11 @@
     },
     {
       "name": "Ghost Sweat",
+      "category": "Animal",
       "texture": ["Liquid"],
-      "taste": ["No taste"],
-      "color": ["Clear"],
+      "taste": [0, 1, 0, 0, 0],
+      "color": [0, 0, 0, 0],
+      "density": 1,
       "smell": ["Null"],
       "effects": [
         "Boon on checks involving stealth for 1d4 hours",
@@ -242,9 +276,11 @@
     },
     {
       "name": "Ginseng",
+      "category": "Plant",
       "texture": ["Herbal"],
-      "taste": ["Earthy", "Bitter", "Sweet"],
-      "color": ["Brown"],
+      "taste": [2, 1, 0, 3, 8],
+      "color": [189, 136, 105, 1],
+      "density": 0.9,
       "smell": ["Earthy", "Spicy"],
       "effects": [
         "Remove inaccurate for the remainder of the round",
@@ -257,9 +293,11 @@
     },
     {
       "name": "Green Pearl",
+      "category": "Plant",
       "texture": ["Herbal", "Floral"],
-      "taste": ["Spicy", "Sweet"],
-      "color": ["Green"],
+      "taste": [1, 1, 0, 0, 5],
+      "color": [41, 79, 56, 1],
+      "density": 0.9,
       "smell": ["Verdant", "Spicy"],
       "effects": [
         "1d4 Lightning damage",
@@ -272,9 +310,12 @@
     },
     {
       "name": "Hemlock",
+      "category": "Plant",
       "texture": ["Herbal", "Floral"],
-      "taste": ["Sweet", "Woody"],
-      "color": ["Green", "White"],
+      "taste": [1, 1, 0, 5, 0],
+      "color": [236, 236, 248, 1],
+      "color1": [168, 188, 63, 1],
+      "density": 0.6,
       "smell": ["Earthy", "Minty"],
       "effects": [
         "Silence for 1d4 Hours",
@@ -287,9 +328,11 @@
     },
     {
       "name": "Honey",
+      "category": "Animal",
       "texture": ["Viscous"],
-      "taste": ["Sweet"],
-      "color": ["Orange"],
+      "taste": [0, 1, 0, 10, 3],
+      "color": [231, 166, 2, 0.5],
+      "density": 0.7,
       "smell": ["Sweet", "Floral"],
       "effects": [
         "Masks scent/taste of 1 name as sweet",
@@ -302,9 +345,12 @@
     },
     {
       "name": "Honeysuckle",
+      "category": "Plant",
       "texture": ["Floral"],
-      "taste": ["Floral", "Sweet"],
-      "color": ["White", "Yellow"],
+      "taste": [0, 2, 0, 8, 3],
+      "color": [237, 241, 182, 1],
+      "color1": [255, 238, 103, 1],
+      "density": 0.6,
       "smell": ["Sweet", "Floral"],
       "effects": [
         "Reduce dazed duration by 1 round",
@@ -317,9 +363,11 @@
     },
     {
       "name": "Infernal Moss",
+      "category": "Plant",
       "texture": ["Vegetable"],
-      "taste": ["Bitter", "Woody", "Rancid"],
-      "color": ["Red", "Orange", "Brown"],
+      "taste": [5, 0, 7, 0, 2],
+      "color": [123, 46, 47, 1],
+      "density": 0.7,
       "smell": ["Sulfurous"],
       "effects": [
         "Deal 1d4 fire dmg, ends bleeding",
@@ -332,9 +380,11 @@
     },
     {
       "name": "Mandrake",
+      "category": "Plant",
       "texture": ["Vegetable"],
-      "taste": ["Woody", "Bitter"],
-      "color": ["Brown"],
+      "taste": [6, 1, 2, 2, 3],
+      "color": [189, 130, 88, 1],
+      "density": 0.8,
       "smell": ["Earthy", "Citrusy"],
       "effects": [
         "Test Fate, on success remove silence",
@@ -347,9 +397,11 @@
     },
     {
       "name": "Maple Syrup",
+      "category": "Plant",
       "texture": ["Viscous"],
-      "taste": ["Sweet"],
-      "color": ["Brown", "Orange"],
+      "taste": [0, 2, 0, 10, 4],
+      "color": [91, 38, 25, 0.45],
+      "density": 0.4,
       "smell": ["Sweet", "Earthy"],
       "effects": [
         "Test Fate/Bane on success no longer exhausted for 1d4 hrs",
@@ -362,9 +414,11 @@
     },
     {
       "name": "Marshmallow",
+      "category": "Plant",
       "texture": ["Floral"],
-      "taste": ["Sweet", "Woody"],
-      "color": ["Green"],
+      "taste": [0, 2, 0, 6, 1],
+      "color": [196, 170, 172, 1],
+      "density": 0.6,
       "smell": ["Sweet", "Salty"],
       "effects": [
         "Counteract effects preventing eating",
@@ -377,9 +431,11 @@
     },
     {
       "name": "Moonflower",
+      "category": "Plant",
       "texture": ["Floral"],
-      "taste": ["Floral", "Spicy"],
-      "color": ["Red", "Purple", "Green", "White"],
+      "taste": [1, 2, 0, 7, 3],
+      "color": [185, 214, 200, 1],
+      "density": 0.6,
       "smell": ["Floral", "Sweet"],
       "effects": [
         "1d4 Lunar Damage (affects ethereal targets)",
@@ -391,10 +447,12 @@
       "applied": false
     },
     {
-      "name": "Pig Tallow",
+      "name": "Pork Lard",
+      "category": "Animal",
       "texture": ["Slimy"],
-      "taste": ["Bland", "Savory"],
-      "color": ["White"],
+      "taste": [0, 0, 0, 0, 3],
+      "color": [246, 243, 224, 0.3],
+      "density": 0.6,
       "smell": ["Null"],
       "effects": ["Null", "Null", "Great for cooking"],
       "consumed": true,
@@ -402,9 +460,11 @@
     },
     {
       "name": "Pine Sap",
+      "category": "Plant",
       "texture": ["Viscous"],
-      "taste": ["Sweet", "Acidic"],
-      "color": ["Brown"],
+      "taste": [5, 2, 0, 3, 6],
+      "color": [227, 183, 34, 0.68],
+      "density": 0.4,
       "smell": ["Sweet", "Minty"],
       "effects": [
         "Double effective applications",
@@ -417,9 +477,11 @@
     },
     {
       "name": "Poison Ivy",
+      "category": "Plant",
       "texture": ["Vegetable"],
-      "taste": ["Earthy", "Spicy"],
-      "color": ["Green"],
+      "taste": [8, 2, 0, 0, 0],
+      "color": [51, 97, 25, 1],
+      "density": 0.7,
       "smell": ["Earthy", "Musty"],
       "effects": [
         "1 Verdant dmg",
@@ -432,9 +494,11 @@
     },
     {
       "name": "Powdered Leech",
+      "category": "Animal",
       "texture": ["Gritty"],
-      "taste": ["Metallic"],
-      "color": ["White"],
+      "taste": [6, 0, 1, 0, 3],
+      "color": [167, 153, 140, 1],
+      "density": 0.8,
       "smell": ["Metallic"],
       "effects": ["2 Unholy Damage", "1d4 Bleed", "2d4 Bleed"],
       "consumed": false,
@@ -443,9 +507,11 @@
     },
     {
       "name": "Quicksilver",
+      "category": "Mineral",
       "texture": ["Liquid"],
-      "taste": ["Metallic"],
-      "color": ["Silver"],
+      "taste": [2, 5, 0, 0, 2],
+      "color": [155, 155, 153, 1],
+      "density": 1,
       "smell": ["Metallic"],
       "effects": [
         "Bane on all checks for the next 1d4 Rests",
@@ -458,9 +524,11 @@
     },
     {
       "name": "Roc Feather",
+      "category": "Animal",
       "texture": ["Downy"],
-      "taste": ["Woody", "Musky"],
-      "color": ["Brown", "White", "Gray"],
+      "taste": [1, 0, 0, 0, 0],
+      "color": [220, 147, 140, 1],
+      "density": 1,
       "smell": ["Musty"],
       "effects": [
         "Test Fate/Bane cure condition",
@@ -473,9 +541,11 @@
     },
     {
       "name": "Salt",
+      "category": "Mineral",
       "texture": ["Gritty"],
-      "taste": ["Salty"],
-      "color": ["White"],
+      "taste": [0, 2, 0, 0, 10],
+      "color": [237, 237, 245, 0.92],
+      "density": 0.7,
       "smell": ["Null"],
       "effects": [
         "Potion has only negative effects for infernal/undead",
@@ -488,9 +558,11 @@
     },
     {
       "name": "Water",
+      "category": "Mineral",
       "texture": ["Liquid"],
-      "taste": ["No taste"],
-      "color": ["Clear"],
+      "taste": [0, 0, 0, 0, 0],
+      "color": [255, 255, 255, 0.3],
+      "density": 0.1,
       "smell": ["Null"],
       "effects": [
         "Remove 1 other effect",
@@ -503,9 +575,11 @@
     },
     {
       "name": "Willow Bark",
+      "category": "Plant",
       "texture": ["Vegetable"],
-      "taste": ["Woody"],
-      "color": ["Brown"],
+      "taste": [7, 1, 0, 0, 3],
+      "color": [221, 187, 142, 1],
+      "density": 0.8,
       "smell": ["Earthy"],
       "effects": [
         "Reduce next attack by 1d4",
@@ -518,9 +592,13 @@
     },
     {
       "name": "Yarrow",
+      "category": "Plant",
       "texture": ["Vegetable", "Floral", "Herbal"],
-      "taste": ["Sweet", "Bitter"],
-      "color": ["Pink", "Red", "Yellow", "White", "Green"],
+      "taste": [4, 2, 0, 3, 5],
+      "color": [196, 15, 99, 1],
+      "color1": [255, 212, 14, 1],
+      "color2": [205, 161, 197, 1],
+      "density": 0.6,
       "smell": ["Earthy", "Sweet"],
       "effects": [
         "Reduce the effect of an name by 1 concentration",
