@@ -57,7 +57,7 @@
       <PotionVisualization :potion="potion" />
       <br />
       <h2>Potion Taste</h2>
-      <PotionFlavorProfile :potion="potionarray" />
+      <PotionFlavorProfile :potion="potion" />
     </div>
   </div>
 </template>
