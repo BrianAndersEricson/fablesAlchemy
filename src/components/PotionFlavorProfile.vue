@@ -1,8 +1,8 @@
 <template>
   <div>
     <p>
-      This potion tastes {{ potionFlavorProfile.rating }} with a
-      {{ potionFlavorProfile.dominantFlavor }} flavor profile.
+      This potion tastes {{ flavorProfileResult.rating }} with a
+      {{ flavorProfileResult.dominantFlavor }} flavor profile.
     </p>
   </div>
 </template>
@@ -34,19 +34,18 @@ export default {
         sour: ["Tangy", "Tart", "Acerbic"],
       },
       potionTaste: { bitter: 0, sour: 0, spicy: 0, sweet: 0, umami: 0 },
+      flavorProfileResult: {}
     };
   },
-  computed: {
-    potionFlavorProfile() {
+  methods: {
+    refreshFlavorProfile() {
       const balance = this.calculateFlavorBalance();
       const dominantFlavor = this.findDominantFlavor();
-      return {
+      this.flavorProfileResult = {
         rating: this.flavorRatings[balance],
         dominantFlavor: this.flavorProfiles[dominantFlavor][0],
       };
     },
-  },
-  methods: {
     calculateFlavorBalance() {
       let balancedFlavors = 0;
 
@@ -98,6 +97,7 @@ export default {
           (i) => i.name === ingredientName
         );
         if (ingredient) {
+          console.log(ingredient.taste)
           this.potionTaste.bitter += ingredient.taste[0];
           this.potionTaste.sour += ingredient.taste[1];
           this.potionTaste.spicy += ingredient.taste[2];
@@ -110,5 +110,8 @@ export default {
   created() {
     this.combineIngredientsTaste();
   },
+  updated() {
+    this.refreshFlavorProfile();
+  }
 };
 </script>
